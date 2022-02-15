@@ -18,15 +18,15 @@ public class UpDownLeftRight {
         // L R U D에 따른 이동 방향
 
         int[] dx = {0,0,-1,1,};
-        int[] dy = {-1,-1,0,0};
+        int[] dy = {-1,1,0,0};
         char[] moveTypes = {'L' , 'R', 'U', 'D'};
 
         //이동 계획을 하나씩 확인
         for (int i = 0; i < plans.length;  i++){
             char plan = plans[i].charAt(0);
             // 이동 후 좌표구하기
-            int nx = -1;
-            int ny = -1;
+            int nx = 0;
+            int ny = 0;
             for(int j =0; j < 4; j++){
                 if(plan == moveTypes[j]){
                     nx = x + dx[j];
