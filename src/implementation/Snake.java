@@ -24,6 +24,7 @@ class Node {
     public char getDirection() {
         return direction;
     }
+
 }
 
 class Position {
@@ -44,7 +45,7 @@ class Position {
         return this.y;
     }
 
-}
+}v
 
 public class Snake {
 
